@@ -1,14 +1,6 @@
 import React, { Component } from "react";
 import uuid from "uuid/v4";
 
-/*
-id: always should contain the result of uuid.v1()
-editing: false by default
-completed: false by default
-content: user provided content
-title: user provided title
-  */
-
 export default class NoteCreateForm extends Component {
   state = {
     editing: false,
@@ -40,7 +32,7 @@ export default class NoteCreateForm extends Component {
   render() {
     return (
       <form onSubmit={this.onSubmit} onChange={this.onChange}>
-        <input name="title" placeholder="title" value={this.state.title} />
+        <input name="title" placeholder="Note Title" value={this.state.title} />
         <textarea
           name="content"
           placeholder="content"

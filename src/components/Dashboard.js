@@ -28,17 +28,8 @@ export default class Dashboard extends Component {
       <Fragment>
         <NoteCreateForm onSubmit={this.addNote} />
         <NoteList notes={this.state.notes} onRemove={this.removeNote} />
-        <MaybeBaby condition={this.state.notes.length > 0}>
-          <Foo />
-        </MaybeBaby>
       </Fragment>
     );
   }
 }
 
-function MaybeBaby(props) {
-  return props.condition && props.children;
-}
-function Foo(props) {
-  return <h1>Hi from Foo</h1>;
-}

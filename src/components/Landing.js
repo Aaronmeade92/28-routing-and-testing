@@ -1,3 +1,3 @@
 import React from "react";
 
-export default () => <h1>This is the landing page I guess</h1>;
+export default () => <h1>This is the landing page</h1>;
